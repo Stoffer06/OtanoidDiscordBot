@@ -6,11 +6,13 @@ from requests import get
 import asyncio
 import datetime
 from datetime import datetime
+import os
 
 
 owner = 808039521328693268
 
-Token = "ODIxNjcwMjk5MzUwNDY2NTcw.YFHGGQ.LtdvdcofcCrgmT4oFZB0iSQFrYo" 
+
+Token = os.environ['TOKEN']
 
 client = commands.Bot(command_prefix="o.", description="I'm here for your needs.")
 
